@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
+header p {
+    font-size: 16px;
+    color: #555;
+}
+
+a {
+    color: #06c;
+}
+
+h2 {
+    border-bottom: 2px solid rgb(134, 134, 134);
+    padding-bottom: 3px;
+}
+
+.job h3, .education div h3, .projects div h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.job p, .education div p, .projects div p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+    line-height: 1.6;
+}
