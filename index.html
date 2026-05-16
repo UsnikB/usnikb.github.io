@@ -40,7 +40,7 @@
     "knowsAbout": ["Generative AI", "Large Language Models", "Python", "Cloud Computing", "Backend Development", "Agentic Workflows", "LangChain"]
   }
   </script>
-  <link rel="stylesheet" type="text/css" href="skeleton.css" />
+  <link rel="stylesheet" type="text/css" href="skeliton.css" />
   <link rel="stylesheet" type="text/css" href="normalize.css" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
@@ -54,42 +54,139 @@
 <body id="override">
   <div class="cursor-glow"></div>
   <div id="landing">
-    <div id="me">
-      <img src="images/me.jpg" alt="Picture of Usnik Biswas" />
-    </div>
-    <div id="text">
+    <!-- Sidebar -->
+    <aside class="profile-sidebar">
+      <div id="me">
+        <img src="images/me.jpg" alt="Usnik Biswas" />
+      </div>
       <h1 class="p1">Usnik <span id="blue">Biswas</span></h1>
-      <h2 class="p2">Backend Developer | Python • Cloud • Automation</h2>
-      <p>
-        I am Usnik Biswas, a backend-focused software developer with a passion for automation, clean code, and scalable systems. I specialize in Python-based development, automation scripting, and deploying systems on modern cloud infrastructure.
-      </p>
-      <p>
-        Currently, I work at <strong>Tech Mahindra</strong>, where I lead GenAI-driven codebase remediation for thousands of enterprise applications. I architect agentic workflows using Large Language Models (LLMs) to automate complex code refactoring, generate synthetic test data, and optimize CI/CD pipelines with intelligent automation.
-      </p>
-      <p>
-        Previously, I worked at <strong>StableHacks (Toronto)</strong>, where I led the backend development of a Python Flask-based system, integrated OpenAI-powered chatbots, and deployed services using Google Cloud Platform (GCP).
-      </p>
-      <p>
-        My journey also includes building educational products, managing cloud VPS servers, and experimenting with home-lab setups using Proxmox and Docker.
-      </p>
-      <p>
-        Profiles:
-        <a href="https://www.linkedin.com/in/usnik-biswas/">LinkedIn</a> &#8226;
-        <a href="https://github.com/UsnikB">GitHub</a> &#8226;
-        <a href="https://usnikb.github.io/gitprofile/">GitHub Web</a>
-      </p>
-      <p>
-        I'm always open to collaborating on cool ideas, freelance work, or joining impactful teams. If you'd like to connect—
-        <strong>let's talk!</strong>
-      </p>
-      <p>
-        📬 Email me at <a href="mailto:usnikbiswas@gmail.com">usnikbiswas@gmail.com</a>
-      </p>
-    </div>
-    <div class="nav">
-      <a href="index.html">Home</a>
-      <a href="resume/index.html">Resume</a>
-    </div>
+      <h2 class="p2">GenAI & Backend Developer</h2>
+      
+      <div class="sidebar-bio">
+        <p>
+          Building agentic workflows and scalable backend systems. Specialized in Python, LLMs, and Cloud Infrastructure.
+        </p>
+        <p>
+          Currently at <strong>Tech Mahindra</strong> leading GenAI-driven enterprise modernization.
+        </p>
+        <p>
+          Profiles: 
+          <a href="https://www.linkedin.com/in/usnik-biswas/">LinkedIn</a> •
+          <a href="https://github.com/UsnikB">GitHub</a>
+        </p>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Main Dashboard</a>
+        <a href="resume/index.html">Detailed Resume</a>
+        <a href="mailto:usnikbiswas@gmail.com">Contact Me</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <div class="section-title">Technical Expertise</div>
+      <div class="skills-grid">
+        <div class="skill-tag">GenAI Agents</div>
+        <div class="skill-tag">LLM / RAG</div>
+        <div class="skill-tag">LangChain</div>
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">Cloud (GCP)</div>
+        <div class="skill-tag">Docker</div>
+        <div class="skill-tag">Automation</div>
+        <div class="skill-tag">PostgreSQL</div>
+        <div class="skill-tag">CI/CD</div>
+        <div class="skill-tag">FastAPI</div>
+      </div>
+
+      <div class="section-title">Featured Work</div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">Agentic Remediation</div>
+            <a href="https://github.com/UsnikB" target="_blank">↗</a>
+          </div>
+          <div class="project-tags">
+            <span class="tag">GenAI</span>
+            <span class="tag">Enterprise</span>
+          </div>
+          <p class="project-desc">
+            Architected LLM agents to automate refactoring of 1000+ applications, reducing security patching effort by 70%.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">OpenAI Chatbots</div>
+            <a href="https://github.com/UsnikB" target="_blank">↗</a>
+          </div>
+          <div class="project-tags">
+            <span class="tag">LLM</span>
+            <span class="tag">GCP</span>
+          </div>
+          <p class="project-desc">
+            End-to-end GPT support agents with custom RAG pipelines, enhancing UX for educational platforms.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-title">Infrastructure & Lab</div>
+      <div class="projects-grid">
+        <!-- Lab Card: Development Cloud -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">Private Dev Cloud</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Docker</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">CI/CD</span>
+          </div>
+          <p class="project-desc">
+            Maintaining a suite of self-hosted engineering tools including <strong>Portainer</strong> for container orchestration, <strong>Obsidian</strong> for architectural documentation, and custom <strong>GenAI Roadmaps</strong>.
+          </p>
+        </div>
+
+        <!-- Lab Card: Automation Ecosystem -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">Automation & Privacy</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">VPN</span>
+            <span class="tag">Security</span>
+          </div>
+          <p class="project-desc">
+            Architected a secure internal network using <strong>Gluetun VPN</strong> and <strong>Nginx</strong> reverse proxies to manage high-traffic automation pipelines and data synchronization services.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-title">Education</div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">Cloud Computing for Big Data</div>
+          </div>
+          <p class="project-desc">
+            <strong>Lambton College, Toronto</strong><br>
+            Post-Graduate Specialization in distributed systems, scalable data processing, and cloud-native architecture.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">B.Tech Computer Science</div>
+          </div>
+          <p class="project-desc">
+            <strong>Karunya University, India</strong><br>
+            Foundational engineering degree with a focus on core algorithms, database management, and software engineering principles.
+          </p>
+        </div>
+      </div>
+
+    </main>
   </div>
   <script src="script.js"></script>
 </body>
