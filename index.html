@@ -40,7 +40,7 @@
     "knowsAbout": ["Generative AI", "Large Language Models", "Python", "Cloud Computing", "Backend Development", "Agentic Workflows", "LangChain"]
   }
   </script>
-  <link rel="stylesheet" type="text/css" href="skeleton.css" />
+  <link rel="stylesheet" type="text/css" href="skeliton.css" />
   <link rel="stylesheet" type="text/css" href="normalize.css" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
@@ -54,42 +54,180 @@
 <body id="override">
   <div class="cursor-glow"></div>
   <div id="landing">
-    <div id="me">
-      <img src="images/me.jpg" alt="Picture of Usnik Biswas" />
-    </div>
-    <div id="text">
+    <!-- Sidebar -->
+    <aside class="profile-sidebar">
+      <div id="me">
+        <img src="images/me.jpg" alt="Usnik Biswas" />
+      </div>
       <h1 class="p1">Usnik <span id="blue">Biswas</span></h1>
-      <h2 class="p2">Backend Developer | Python • Cloud • Automation</h2>
-      <p>
-        I am Usnik Biswas, a backend-focused software developer with a passion for automation, clean code, and scalable systems. I specialize in Python-based development, automation scripting, and deploying systems on modern cloud infrastructure.
-      </p>
-      <p>
-        Currently, I work at <strong>Tech Mahindra</strong>, where I lead GenAI-driven codebase remediation for thousands of enterprise applications. I architect agentic workflows using Large Language Models (LLMs) to automate complex code refactoring, generate synthetic test data, and optimize CI/CD pipelines with intelligent automation.
-      </p>
-      <p>
-        Previously, I worked at <strong>StableHacks (Toronto)</strong>, where I led the backend development of a Python Flask-based system, integrated OpenAI-powered chatbots, and deployed services using Google Cloud Platform (GCP).
-      </p>
-      <p>
-        My journey also includes building educational products, managing cloud VPS servers, and experimenting with home-lab setups using Proxmox and Docker.
-      </p>
-      <p>
-        Profiles:
-        <a href="https://www.linkedin.com/in/usnik-biswas/">LinkedIn</a> &#8226;
-        <a href="https://github.com/UsnikB">GitHub</a> &#8226;
-        <a href="https://usnikb.github.io/gitprofile/">GitHub Web</a>
-      </p>
-      <p>
-        I'm always open to collaborating on cool ideas, freelance work, or joining impactful teams. If you'd like to connect—
-        <strong>let's talk!</strong>
-      </p>
-      <p>
-        📬 Email me at <a href="mailto:usnikbiswas@gmail.com">usnikbiswas@gmail.com</a>
-      </p>
-    </div>
-    <div class="nav">
-      <a href="index.html">Home</a>
-      <a href="resume/index.html">Resume</a>
-    </div>
+      <h2 class="p2">GenAI & Backend Developer</h2>
+      
+      <div class="sidebar-bio">
+        <p>
+          Building agentic workflows and scalable backend systems. Specialized in Python, LLMs, and Cloud Infrastructure.
+        </p>
+        <p>
+          Currently at <strong>Tech Mahindra</strong> leading GenAI-driven enterprise modernization.
+        </p>
+        <p>
+          Profiles: 
+          <a href="https://www.linkedin.com/in/usnik-biswas/">LinkedIn</a> •
+          <a href="https://github.com/UsnikB">GitHub</a>
+        </p>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Main Dashboard</a>
+        <a href="resume/index.html">Detailed Resume</a>
+        <a href="mailto:usnikbiswas@gmail.com">Contact Me</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <div class="section-title">Technical Expertise</div>
+      <div class="skills-grid">
+        <div class="skill-tag">GenAI Agents</div>
+        <div class="skill-tag">LLM / RAG</div>
+        <div class="skill-tag">LangChain</div>
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">Cloud (GCP)</div>
+        <div class="skill-tag">Docker</div>
+        <div class="skill-tag">Automation</div>
+        <div class="skill-tag">PostgreSQL</div>
+        <div class="skill-tag">CI/CD</div>
+        <div class="skill-tag">FastAPI</div>
+      </div>
+
+      <div class="section-title">Featured Work</div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">Agentic SRE & Observability</div>
+            <a href="https://github.com/UsnikB" target="_blank">↗</a>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Ollama</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Docker</span>
+          </div>
+          <p class="project-desc">
+            Engineered an automated SRE agent that integrates **Ollama** with **Glances** and **Portainer APIs** for real-time homelab monitoring. Performs root-cause analysis on container failures and automates remediation via Tailscale-secured webhooks.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">RAG Support Pipeline</div>
+            <a href="https://github.com/UsnikB" target="_blank">↗</a>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Pinecone</span>
+            <span class="tag">GCP</span>
+          </div>
+          <p class="project-desc">
+            Developed a production-grade RAG pipeline using Pinecone vector DB and GPT-4. Integrated Selenium-based data ingestion and custom NLTK preprocessing to handle high-volume educational platform queries.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-title">Professional Experience</div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">Tech Mahindra</div>
+            <span class="tag">Mar 2025 – Present</span>
+          </div>
+          <p class="project-desc">
+            <strong>Software Developer (GenAI)</strong><br>
+            • Leading modernization of 1000+ apps using LLM agents for automated security patching and architectural refactoring.<br>
+            • Engineered RAG systems and agentic workflows using Python and LangChain for large-scale codebase modernization.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">StableHacks</div>
+            <span class="tag">May 2023 – Aug 2024</span>
+          </div>
+          <p class="project-desc">
+            <strong>Backend Developer</strong><br>
+            • Built scalable scraping + NLP pipelines using Selenium and Spacy, deploying on GCP (Cloud Run / Functions).<br>
+            • Led OpenAI-powered chatbot development, enhancing UX and support workflows for educational platforms.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">Accenture</div>
+            <span class="tag">Jun 2019 – Jun 2021</span>
+          </div>
+          <p class="project-desc">
+            <strong>Software Developer</strong><br>
+            • Maintained high-traffic backend modules for global e-commerce platforms (SAP/Magento) across 16 countries.<br>
+            • Automated complex data migration workflows with Python, significantly reducing manual intervention and errors.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-title">Infrastructure & Lab</div>
+      <div class="projects-grid">
+        <!-- Lab Card: Homelab Stack -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">Autonomous Homelab (Servarr)</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Docker</span>
+            <span class="tag">NVIDIA GPU</span>
+            <span class="tag">DevOps</span>
+          </div>
+          <p class="project-desc">
+            Orchestrated a 24/7 headless media automation suite with GPU-accelerated transcoding and VPN-gated traffic. Managed via <strong>Portainer</strong> and secured with custom SSL / <strong>Cloudflare Tunnels</strong>.
+          </p>
+        </div>
+
+        <!-- Lab Card: Home Automation -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">Home Automation Ecosystem</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">IoT</span>
+            <span class="tag">Python</span>
+            <span class="tag">Local-First</span>
+          </div>
+          <p class="project-desc">
+            Built a local-first automation controller for smart lighting and camera surveillance. Integrated motion-triggered camera recording, scheduled light zones, and secure on-premise event logging.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-title">Education</div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">Cloud Computing for Big Data</div>
+          </div>
+          <p class="project-desc">
+            <strong>Lambton College, Toronto</strong><br>
+            Post-Graduate Specialization in distributed systems, scalable data processing, and cloud-native architecture.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">B.Tech Computer Science</div>
+          </div>
+          <p class="project-desc">
+            <strong>Karunya University, India</strong><br>
+            Foundational engineering degree with a focus on core algorithms, database management, and software engineering principles.
+          </p>
+        </div>
+      </div>
+
+    </main>
   </div>
   <script src="script.js"></script>
 </body>
